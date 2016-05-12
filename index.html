@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+ jQuery CDN link....  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <!--<meta name="viewport" content="initial-scale=1.0">-->
+    <meta charset="UTF-8">	
+    <title>HTML5 300: Week Five</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- link to an external style sheet (best practice with style sheet)-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+  <body class="page"><!-- everything that is visual goes in the body tag  -->
+    <header>
+        <!-- the "banner" area or title of the page-->
+        <h1>HTML5 300: Week Five</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header>
+      <nav class="nav1"> 
+        <ul>
+          <!-- these links are relative paths -->
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="http://patsyklotz.github.io/html5-300-week4/">Week Four</a></li>
+          <li> <a href="javascript/inputs-dragdrop-script.js">JavaScript</a></li>
+          <li> <a href="http://www.google.com">Google</a></li>
+        </ul>
+      </nav>
+      <div id="mainContent">
+        <h2>Assignment Five: Inputs, or Drag and Drop</h3>
+          <!-- A Simple Form    -->
+          <p>Make a table for different kinds of input elements. In the first column, show type of input. In the second column, put an actual element of that type. The third column is for the values entered by the user.</p>  
+      <!--Create a web page with a text area input field. Allow user to choose the location and zoom level.-->
+      <form id="inputs" style="display:block">
+        <h2>Input Element Table</h2>
+          <table style="width:90%">
+            <tbody>
+              <tr>
+                <th>Control Type</th>
+                <th>Control</th>
+                <th>Value Entered</th>
+              </tr>
+              <tr>
+                <td>Input Type="checkbox"</td>
+                <td>
+                  <form id="checkboxForm">
+                    <input type="checkbox">
+                  </form>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Input Type="radio"</td>
+                <td>
+                  <form id="radioform">
+                    <input type="radio" name="first" value="first">First<br>
+                    <input type="radio" name="Second" value="second">Second<br>
+                    <input type="radio" name="Second" value="second">Third<br>
+                  </form>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Input Type="text"</td>
+                <td>
+                  <form id="textForm">
+                    <input type="text" name="text" id="user-input" value="None specified">
+                  </form> 
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Input Type="textarea"</td>
+                <td> 
+                  <form id="textareaForm">
+                    <input type="textarea" rows="4" name="message" col="1" id="text-input">
+                  </form>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Input Type="Select"</td>
+                <td>
+                  <form id="selectForm">
+                    <select>
+                      <option value="first">First</option>
+                      <option value="second">Second</option>
+                      <option value="third">Third</option>
+                    </select>
+                  </form>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>HTML5 Input Type="Range"</td>
+                <td>
+                  <form id="rangeForm">
+                    <input type="range">
+                  </form>
+                </td>
+                <td></td>
+              </tr>
+               <tr>
+                <td>HTML5 Input Type="Date"</td>
+                <td>
+                  <form id="dateForm">
+                    <input type="date">
+                  </form>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>HTML5 Input Type="Time"</td>
+                <td>
+                  <form id="timeForm">
+                    <input type="time">
+                  </form>
+                  <td></td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3></h3>
+          <button onclick="myFunction()">Reset Form</button>
+        </form>
+       </div><!-- closing maincContent div tag -->
+      <script type="text/javascript" src="javascript/inputs-dragdrop-script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.js"></script>
+    <footer> 
+      <p>&copy; copyright 2016</p>
+    </footer>
+  </body>
+</html>
