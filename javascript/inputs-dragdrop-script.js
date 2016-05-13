@@ -15,7 +15,11 @@
   
 $( "input[type='checkbox']" ).prop( "checked", function( i, val ) {
   return !val;
-});
+  if (checked==='checked') {
+    checkbox = true;
+  } else {
+    checkbox = false;
+}});
   
   
 /*Function to read and display radio input*/
